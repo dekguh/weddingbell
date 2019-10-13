@@ -1,0 +1,439 @@
+html{
+    overflow-x: hidden;
+    height: 100%;
+}
+
+body, .wrapper{
+    min-height: 100%;
+}
+
+/* setting */
+.offset{
+    padding-top: 4rem;
+}
+
+#particles-js{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+/* button */
+.btn-basic{
+    background-color: rgb(255, 107, 107);
+    color: #FFFFFF;
+}
+
+.btn-basic:hover{
+    background-color: rgb(226, 96, 96);
+    color: #FFFFFF;
+}
+
+.btn-reserve{
+    border-radius: 0;
+    text-transform: uppercase;
+    font-family: 'oswald', sans-serif;
+    font-size: 1.5rem;
+    padding: 0.5rem 2rem;;
+}
+
+/* heading section */
+.heading-section h3{
+    color: rgb(255, 107, 107);
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+}
+
+.heading-section p{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(32, 32, 32);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+/* home */
+.home-inner {
+    position: relative;
+    background-image: url('../img/home-bg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.home-bg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: rgba(221,40,8,0.59);
+    background: -moz-linear-gradient(left, rgba(221,40,8,0.59) 0%, rgba(199,0,66,0.41) 44%, rgba(199,0,66,0.19) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(221,40,8,0.59)), color-stop(44%, rgba(199,0,66,0.41)), color-stop(100%, rgba(199,0,66,0.19)));
+    background: -webkit-linear-gradient(left, rgba(221,40,8,0.59) 0%, rgba(199,0,66,0.41) 44%, rgba(199,0,66,0.19) 100%);
+    background: -o-linear-gradient(left, rgba(221,40,8,0.59) 0%, rgba(199,0,66,0.41) 44%, rgba(199,0,66,0.19) 100%);
+    background: -ms-linear-gradient(left, rgba(221,40,8,0.59) 0%, rgba(199,0,66,0.41) 44%, rgba(199,0,66,0.19) 100%);
+    background: linear-gradient(to right, rgba(221,40,8,0.59) 0%, rgba(199,0,66,0.41) 44%, rgba(199,0,66,0.19) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd2808', endColorstr='#c70042', GradientType=1 );
+}
+
+.home-content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 0 1rem;
+}
+
+.home-content .title-1 a{
+    color: #FFFFFF;
+    font-family: 'Great Vibes', cursive;
+    font-size: 5vh;
+    text-decoration: none;
+}
+
+.home-content .title-2{
+    color: #FFFFFF;
+    font-family: 'Great Vibes', cursive;
+    font-size: 7vh;
+}
+
+/* navbar */
+.navbar-custom{
+    width: 100%;
+    background-color: rgba(2, 2, 2, 0.404);
+}
+
+.navbar-custom .navbar-brand{
+    font-family: 'Great Vibes', cursive;
+    font-size: 2rem;
+    color: #FFFFFF;
+}
+
+.navbar-custom .navbar-brand:hover, .nav-link.active{
+    color: rgb(255, 107, 107);
+}
+
+.navbar-custom .nav-link{
+    color: #FFFFFF;
+    font-family: 'Oswald', sans-serif;
+}
+
+.navbar-custom .nav-link:hover{
+    color: rgb(255, 107, 107);
+}
+
+.navbar-custom .navbar-toggler{
+    border-color: #FFFFFF;
+}
+
+.navbar-custom .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* countdown */
+.list-countdown{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-countdown li{
+    display: inline-block;
+    padding: 1rem;
+    color: rgb(226, 96, 96);
+    font-weight: bold;
+}
+
+.list-countdown li .countdown-frame{
+    text-align: left;
+    display: block;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    position: relative;
+    border: 0.1rem solid rgb(255, 107, 107);
+    margin-bottom: 1rem;
+}
+
+.countdown-frame span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 2rem;
+    color: rgb(32, 32, 32);
+}
+
+/* bride */
+.bride-content{
+    width: 100%;
+    position: relative; 
+    max-height: 40rem;
+    overflow: hidden;
+}
+
+.bride-content img{
+    width: 100%;
+    height: 25rem;
+    transition: 0.4s ease;
+}
+
+.bride-content:hover img{
+    transform: scale(1.2);
+}
+
+.couple-title{
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    left: 10%;
+    border-radius: 1rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 0.3rem 1rem;
+}
+
+.groom{
+    background-color: rgb(96, 200, 226);
+}
+
+.bride{
+    background-color: rgb(255, 107, 107);
+}
+
+/* story */
+.story-image{
+    height: 20rem;
+}
+
+.story-content{
+    background-color: #FFFFFF;
+    height: 20rem;
+    width: 100%;
+    position: relative;
+}
+
+.story-position{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 2rem;
+}
+
+.story-position h4{
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.8rem;
+    padding: 0;
+    margin: 0;
+}
+
+.story-position .date{
+    color: rgb(32, 32, 32);
+    display: block;
+}
+
+.story-position p{
+    padding-top: 1rem;
+    color: rgb(141, 141, 141);
+}
+
+/* message */
+.message-inner{
+    background-image: url('../img/message-bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    widows: 100%;
+    padding: 2rem 0;
+}
+.message-inner h3{
+    color: #FFFFFF;
+    font-family: 'Great Vibes', cursive;
+    font-size: 5rem;
+}
+
+/* event */
+.event-image{
+    width: 100%;
+    height: 20rem;
+}
+
+.event-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.event-detail{
+    margin: 0;
+    padding: 1rem 0 0 0;
+    list-style: none;
+}
+
+.event-detail li{
+    padding: 0.1rem 1rem;
+    color: rgb(141, 141, 141);
+}
+
+.event-detail li h4{
+    font-family: 'Great Vibes', cursive;
+    color: rgb(255, 107, 107);
+    font-size: 2.2rem;
+}
+
+.event-detail li i{
+    color: rgb(226, 96, 96);
+}
+
+/* bridemaid */
+.bridemaid-inner{
+    background-color: rgb(236, 236, 236);
+    padding: 2rem 0;
+}
+
+.bridemaid-content{
+    position: relative;
+    width: 100%;
+    height: 20rem;
+    overflow: hidden;
+}
+
+.bridemaid-content img{
+    width: 100%;
+    height: 100%;
+    transition: 0.4s ease;
+}
+
+.bridemaid-content:hover img{
+    transform: scale(1.2);
+}
+
+.bridemaid-content .bridemain-content-bg{
+    display: none;
+}
+
+.bridemaid-content:hover .bridemain-content-bg{
+    display: table;
+    background-color: rgba(2, 2, 2, 0.705);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index:55;
+    cursor: pointer;
+}
+
+.bridemain-content-bg .content{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.bridemain-content-bg .content h4{
+    color: rgb(255, 107, 107);
+    padding: 0;
+    margin: 0;
+    font-family: 'Great Vibes', cursive;
+    font-size: 2rem;
+}
+
+/* Gallery */
+
+.list-gallery{
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0 0 0;
+}
+
+.gallery-item img{
+    width: 100%;
+    height: 15rem;
+}
+
+/* reserve */
+.reserve-inner{
+    background-image: url('../img/reserve-bg.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+/* map */
+.map-wrapper{
+    width: 100%;
+    height: 20rem;
+}
+
+.map-wrapper iframe{
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+/* footer */
+.footer-wrapper{
+    background-color: rgb(3, 3, 3);
+    color: #FFFFFF;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.footer-wrapper .copyright{
+    color: #FFFFFF;
+}
+
+.footer-wrapper .copyright a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* media */
+@media (max-width:575.98px){
+    .story-image{
+        height: 15rem;
+    }
+
+    .message-inner h3{
+        font-size: 2rem;
+    }
+
+    .event-image{
+        width: 100%;
+        height: 10rem;
+    }
+}
+
+@media (max-width:767.98px){
+    .heading-section h3{
+        font-size: 2rem;
+    }
+
+    .heading-section p{
+        font-size: 1rem;
+    }
+
+    .bride-content img{
+        height: 20rem;
+    }
+
+    .bridemaid-content{
+        height: 35rem;
+    }
+}
+
+@media (max-width:991.98px){
+    .bride-content img{
+        height: 15rem;
+    }
+
+    .bridemaid-content{
+        height: 30rem;
+    }
+}
